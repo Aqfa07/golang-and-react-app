@@ -16,59 +16,60 @@ Your project is live at:
 
 **[https://v0-golang-and-react-app.vercel.app/](https://v0-golang-and-react-app.vercel.app/)**
 
-## Build your app
+# 🚀 Project Setup Guide
+## 1. Set Up the Golang Backend ⚙️
 
-🚀 Project Setup Guide
-1. Set Up the Golang Backend ⚙️
-Get your powerful Go backend up and running in no time!
+   Get your powerful Go backend up and running in no time!
 
-Install Go
-Download from the official site: golang.org/dl
+**1. Install Go**
+  
+   Download from the official site: golang.org/dl
+   
+**2. Initialize Project**
+   ```
+   mkdir my-awesome-project
+   cd my-awesome-project
+   ```
+**3. Add Project Files**
 
-Initialize Project
+   Copy `main.go` and `go.mod` to your project directory
 
-shellscript
-mkdir my-awesome-project
-cd my-awesome-project
-Add Project Files
-Copy main.go and go.mod to your project directory
+**4. Launch the Server 🚀**
+   ```
+   # Install dependencies
+   go mod tidy
 
-Launch the Server 🚀
-
-shellscript
-# Install dependencies
-go mod tidy
-
-# Start the server (default port: 8080)
-go run main.go
+   # Start the server (default port: 8080)
+   go run main.go
+   ```
 Your backend will be live at http://localhost:8080!
 
-2. Set Up the React Frontend 💻
+# 2. Set Up the React Frontend 💻
 Create a sleek modern interface with Next.js:
 
-Scaffold Your App
+**1. Scaffold Your App**
+  ```
+  npx create-next-app@latest frontend
+  cd frontend
+  ```
+**2. Add Essential Packages**
+  ```
+  npm install lucide-react
+  ```
+**3. Integrate Components**
+  Copy the React components from this project
 
-shellscript
-npx create-next-app@latest frontend
-cd frontend
-Add Essential Packages
-
-shellscript
-npm install lucide-react
-Integrate Components
-Copy the React components from this project
-
-Connect to Backend 🔌
-Update API endpoints in your React code:
-
-javascript
-// Before
-const response = await fetch("/api/tasks")
-
-// After
-const response = await fetch("http://localhost:8080/api/tasks")
-Launch the Frontend 🎉
-
-shellscript
-npm run dev
-Access your app at http://localhost:3000
+**4. Connect to Backend 🔌**
+  Update API endpoints in your React code:
+  ```
+  // Before
+  const response = await fetch("/api/tasks")
+  
+  // After
+  const response = await fetch("http://localhost:8080/api/tasks")
+  ```
+**5. Launch the Frontend 🎉**
+  ```
+  npm run dev
+  ```
+  Access your app at http://localhost:3000
