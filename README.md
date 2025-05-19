@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/aqfasmanju7-4557s-projects/v0-golang-and-react-app](https://vercel.com/aqfasmanju7-4557s-projects/v0-golang-and-react-app)**
+**[https://v0-golang-and-react-app.vercel.app/](https://v0-golang-and-react-app.vercel.app/)**
 
 ## Build your app
 
