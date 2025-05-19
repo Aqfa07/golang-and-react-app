@@ -18,13 +18,57 @@ Your project is live at:
 
 ## Build your app
 
-Continue building your app on:
+🚀 Project Setup Guide
+1. Set Up the Golang Backend ⚙️
+Get your powerful Go backend up and running in no time!
 
-**[https://v0.dev/chat/projects/YDzie90vPZX](https://v0.dev/chat/projects/YDzie90vPZX)**
+Install Go
+Download from the official site: golang.org/dl
 
-## How It Works
+Initialize Project
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+shellscript
+mkdir my-awesome-project
+cd my-awesome-project
+Add Project Files
+Copy main.go and go.mod to your project directory
+
+Launch the Server 🚀
+
+shellscript
+# Install dependencies
+go mod tidy
+
+# Start the server (default port: 8080)
+go run main.go
+Your backend will be live at http://localhost:8080!
+
+2. Set Up the React Frontend 💻
+Create a sleek modern interface with Next.js:
+
+Scaffold Your App
+
+shellscript
+npx create-next-app@latest frontend
+cd frontend
+Add Essential Packages
+
+shellscript
+npm install lucide-react
+Integrate Components
+Copy the React components from this project
+
+Connect to Backend 🔌
+Update API endpoints in your React code:
+
+javascript
+// Before
+const response = await fetch("/api/tasks")
+
+// After
+const response = await fetch("http://localhost:8080/api/tasks")
+Launch the Frontend 🎉
+
+shellscript
+npm run dev
+Access your app at http://localhost:3000
